@@ -31,11 +31,12 @@ foreach (EwsAPI::getResponse() as $item) {
     $sync_state = $item->SyncState;
     Core::debugOut("new sync_state: $sync_state");
     EwsAPI::setSyncState($sync_state);
+    # @TODO: set sync state AFTER successful creation/update/delete/whatever?
 
     Core::debugOut('count new: ' . count($item->Changes->Create));
 
     foreach ($item->Changes->Create as $change) {
-        GoogleAPI::createEvent($change);
+        // GoogleAPI::createEvent($change);
     }
 }
 
