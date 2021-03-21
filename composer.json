@@ -1,0 +1,6 @@
+{
+    "require": {
+        "php-ews/php-ews": "^1.0",
+        "google/apiclient": "^2.9"
+    }
+}
