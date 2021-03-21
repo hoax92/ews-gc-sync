@@ -1,4 +1,5 @@
 runtime/config.json
 runtime/client_secret.json
 runtime/ga_token.json
+runtime/ews_sync_state.json
 .idea
